@@ -1,0 +1,47 @@
+/* Type Selector */
+/* html ka naam lekar jo ham select krte hen use 
+type selector kehte hen */
+body {
+  background-color: beige;
+  text-transform: uppercase;
+}
+
+li {
+  font-size: 30px;
+  /* background-color: chocolate;
+  color: white; */
+  margin: 5px;
+  padding: 5px;
+  border : 1px solid black
+   
+}
+
+li{
+    border-color: aquamarine;
+}
+
+/* Universal Selector */
+/* har har HTML ke element pe style apply hojae */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Class selector */
+.css-text {
+  text-decoration: underline;
+}
+
+/* ID Selector */
+#css-heading {
+  text-align: center;
+}
+
+/* Child Selector */
+
+div > h1 {
+  color: chocolate;
+}
+
+/* div > p > strong {
+    font-style: italic;
+} */
