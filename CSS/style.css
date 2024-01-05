@@ -1,39 +1,85 @@
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("fonts/Poppins-Bold.ttf");
+}
+
 /* Type Selector */
 /* html ka naam lekar jo ham select krte hen use 
 type selector kehte hen */
 body {
+  /* color name */
   background-color: beige;
-  text-transform: uppercase;
+  /* hsl */
+  background-color: hsl(60, 33%, 89%);
+  /* rgb */
+  background-color: rgb(236, 236, 218);
+  /* hex code */
+  background-color: #ececda;
+  color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3NzJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+
+  /* text-transform: uppercase; */
 }
 
 li {
-  font-size: 30px;
-  /* background-color: chocolate;
-  color: white; */
+  font-size: 32px;
+  font-size: 2em;
+  font-size: 200%;
   margin: 5px;
   padding: 5px;
-  border : 1px solid black
-   
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.502);
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 
-li{
-    border-color: aquamarine;
+li > span {
+  font-family: PoppinsBold;
+  text-decoration: underline;
+  text-decoration-style: double;
+  color: coral;
+}
+
+li {
+  border-color: aquamarine;
 }
 
 /* Universal Selector */
 /* har har HTML ke element pe style apply hojae */
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* serif , extra details on the bottom */
+  font-family: serif;
+  /*san serif , extra details on the bottom */
+  font-family: sans-serif;
+  /*monospace , har letter ki space same hogi */
+  font-family: monospace;
+
+  font-family: PoppinsLight;
 }
 
 /* Class selector */
 .css-text {
-  text-decoration: underline;
 }
 
 /* ID Selector */
 #css-heading {
   text-align: center;
+  font-family: PoppinsBold;
+  font-size: 3em;
+  background-color: rgba(128, 0, 128, 0.4);
+}
+
+p {
+  text-align: justify;
 }
 
 /* Child Selector */
