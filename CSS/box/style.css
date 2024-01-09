@@ -1,0 +1,59 @@
+* {
+  /* border: 1px solid brown; */
+}
+
+h1 {
+  min-width: 300px;
+  background-color: beige;
+  /* width: 200px; */
+  max-width: 350px;
+  text-align: center;
+  /* box ko center mein krne ke lye */
+  margin: 12px auto;
+}
+
+li {
+  margin: 4px;
+  padding: 5px;
+}
+span {
+  padding: 0px 20px;
+}
+
+/* p {
+  background-color: chocolate;
+}
+
+b {
+  background-color: burlywood;
+}
+
+i {
+  background-color: beige;
+} */
+
+
+.parent{
+    width: 400px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+.box {
+  min-height: 100px; 
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: beige;
+  border-color: beige;
+}
+.box2 {
+  background-color: chocolate;
+  border-color: chocolate;
+}
+.box3 {
+  background-color: brown;
+  border-color: brown;
+}
