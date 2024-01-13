@@ -1,0 +1,70 @@
+.parent {
+  min-height: 300px;
+  max-width: 600px;
+  margin: 12px auto;
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* space-between -> corner mein space na do or beech mein equal dedo
+space-around -> corner mein kam space  do or beech mein equal dedo
+space-evenly  -> sab jagha se barabar dedo*/
+
+/* flex-direction
+align-items
+justify-content
+flex-wrap
+*/
+
+.box {
+  height: 98px;
+  width: 98px;
+  border: 1px solid brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    height: 40px;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_item{
+    cursor: pointer;
+}
+
+.food{
+    font-size: 14px;
+    margin: 0px 12px;
+    font-weight: 300;
+}
+
+.food:hover{
+    color: rgb(63, 63, 42);
+    text-decoration: underline;
+}
