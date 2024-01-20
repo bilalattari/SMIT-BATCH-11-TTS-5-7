@@ -1,3 +1,7 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 .parent {
   min-height: 300px;
   max-width: 600px;
@@ -51,6 +55,7 @@ nav {
   position: fixed;
   top: 0;
   width: 98.2%;
+  z-index: 1;
 }
 
 .heading {
@@ -80,7 +85,6 @@ nav {
 h2 {
   font-weight: lighter;
   text-align: center;
-  font-family: "Quicksand", sans-serif;
 }
 
 .category_box {
@@ -192,4 +196,90 @@ h2 {
   background-color: orange;
   width: 200px;
   /* position: relative; */
+}
+
+.position_absolute_parent {
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  margin: 0px auto;
+  position: relative;
+}
+
+.ps_child_1 {
+  height: 120px;
+  width: 100%;
+  background-color: red;
+}
+.ps_child_2 {
+  margin: 0px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+}
+
+.ps_child_3 {
+  height: 20px;
+  /* width: 40px; */
+  background-color: #e21b70;
+  color: white;
+  padding: 2px 6px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.ps_child_4 {
+  height: 20px;
+  /* width: 40px; */
+  background-color: rgba(226, 27, 112, 0.8);
+  color: white;
+  padding: 2px 6px;
+  position: absolute;
+  top: 35px;
+  left: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.city_box {
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  margin: 0px auto;
+  position: relative;
+  margin: 20px;
+  z-index: 0;
+}
+
+.city_img {
+  height: 100%;
+  width: 100%;
+}
+
+.desc_box {
+  position: absolute;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  bottom: 0;
+}
+
+.city_name {
+  font-weight: bold;
+  color: white;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.city_desc {
+  font-weight: lighter;
+  font-size: 14px;
+  color: white;
+  padding-left: 5px;
 }

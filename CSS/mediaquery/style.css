@@ -1,0 +1,84 @@
+body {
+  background-color: red;
+  color: white;
+}
+
+.city_box {
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  margin: 0px auto;
+  position: relative;
+  margin: 20px;
+  z-index: 0;
+}
+
+.city_img {
+  height: 100%;
+  width: 100%;
+}
+
+.desc_box {
+  position: absolute;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  bottom: 0;
+}
+
+.city_name {
+  font-weight: bold;
+  color: white;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.city_desc {
+  font-weight: lighter;
+  font-size: 14px;
+  color: white;
+  padding-left: 5px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-image: url("https://images.unsplash.com/photo-1602740337312-e28c0b7d27f9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+  }
+  .city_box {
+    margin: 5px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .city_box {
+    height: 300px;
+    width: 90%;
+  }
+
+  .desc_box {
+    height: 80px;
+  }
+  .city_name {
+    font-size: 20px;
+  }
+
+  .city_desc {
+    font-size: 16px;
+  }
+}
