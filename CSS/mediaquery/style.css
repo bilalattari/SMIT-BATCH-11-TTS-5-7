@@ -1,84 +1,34 @@
-body {
-  background-color: red;
-  color: white;
+.parent {
+  display: flex;
 }
 
-.city_box {
-  height: 200px;
-  width: 200px;
-  border: 3px solid black;
-  margin: 0px auto;
-  position: relative;
-  margin: 20px;
-  z-index: 0;
+.child {
+  width: 50%;
 }
 
-.city_img {
-  height: 100%;
-  width: 100%;
+.left {
+  background-color: aqua;
+}
+.right {
+  background-color: bisque;
+  text-align: center;
 }
 
-.desc_box {
-  position: absolute;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  bottom: 0;
+.header_img {
+  height: 300px;
+  width: 300px;
 }
 
-.city_name {
-  font-weight: bold;
-  color: white;
-  padding-left: 5px;
-  padding-top: 5px;
-}
-
-.city_desc {
-  font-weight: lighter;
-  font-size: 14px;
-  color: white;
-  padding-left: 5px;
-}
-
-@media (max-width: 1000px) {
-  body {
-    background-image: url("https://images.unsplash.com/photo-1602740337312-e28c0b7d27f9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
+@media (max-width: 640px) {
+  .parent {
+    flex-direction: column-reverse;
   }
-  .city_box {
-    margin: 5px;
-  }
-
-  h1 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    background-color: white;
-    color: black;
-  }
-
-  h1 {
+  .child {
+    width: 100%;
     text-align: center;
   }
 
-  .city_box {
-    height: 300px;
-    width: 90%;
-  }
-
-  .desc_box {
-    height: 80px;
-  }
-  .city_name {
-    font-size: 20px;
-  }
-
-  .city_desc {
-    font-size: 16px;
+  .right {
+    display: none;
   }
 }
