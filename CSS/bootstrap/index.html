@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body >
     <!-- header -->
@@ -61,7 +63,7 @@
 
     <!-- slider -->
 
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide" >
       <div class="carousel-indicators">
         <button
           type="button"
@@ -131,6 +133,7 @@
 
     <div class="container mx-auto row my-5">
       <div
+      data-aos="fade-right"
         class="col-12 col-md-6 d-flex justify-content-center align-items-center"
       >
         <img
@@ -138,7 +141,7 @@
           src="https://img.freepik.com/free-vector/privacy-policy-concept-illustration_114360-7478.jpg?w=996&t=st=1706764694~exp=1706765294~hmac=df46529192e460a003e0fca625fe4a571a3479942cac3282490eace018306eba"
         />
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" data-aos="fade-left">
         <div class="accordion m-4" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -240,7 +243,7 @@
     <!-- progress section using progress -->
 
     <div class="container mx-auto row my-5">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" data-aos="flip-left">
         <div class="m-4">
           <p class="lead fw-semibold mt-3">HTML</p>
           <div
@@ -303,10 +306,10 @@
     <!-- portfolio section using cards -->
 
     <div class="container">
-      <p class="display-6 fw-bold text-center ">My Portfolio</p>
+      <p class="display-6 fw-bold text-center " data-aos="flip-right">My Portfolio</p>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
         <div>
-          <div class="card" style="width: 17rem">
+          <div class="card" style="width: 17rem" data-aos="fade-right">
             <img
               src="https://img.freepik.com/free-vector/woman-online-shopping_603843-3344.jpg?size=626&ext=jpg&ga=GA1.1.1661104625.1706762177&semt=ais"
               class="card-img-top"
@@ -321,7 +324,7 @@
         </div>
 
         <div>
-          <div class="card" style="width: 17rem">
+          <div class="card" style="width: 17rem" data-aos="fade-up">
             <img
               src="https://img.freepik.com/free-photo/front-view-woman-working-as-travel-agent_23-2150433446.jpg?size=626&ext=jpg&ga=GA1.1.1661104625.1706762177&semt=ais"
               class="card-img-top"
@@ -336,7 +339,7 @@
         </div>
 
         <div>
-          <div class="card" style="width: 17rem">
+          <div class="card" style="width: 17rem" data-aos="fade-up">
             <img
               src="https://img.freepik.com/free-vector/woman-online-shopping_603843-3344.jpg?size=626&ext=jpg&ga=GA1.1.1661104625.1706762177&semt=ais"
               class="card-img-top"
@@ -351,7 +354,7 @@
         </div>
 
         <div>
-          <div class="card" style="width: 17rem">
+          <div class="card" style="width: 17rem" data-aos="fade-left">
             <img
               src="https://img.freepik.com/free-vector/woman-online-shopping_603843-3344.jpg?size=626&ext=jpg&ga=GA1.1.1661104625.1706762177&semt=ais"
               class="card-img-top"
@@ -367,6 +370,10 @@
       </div>
     </div>
 
+    <div class="progress m-5" style="width: 100px;" >
+      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
     
 
     <script
@@ -374,5 +381,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
