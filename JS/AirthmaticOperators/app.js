@@ -1,3 +1,5 @@
+// Familier Operators
+
 var num1 = 30
 var num2 = 10
 
@@ -25,19 +27,73 @@ var bodmas4 = subtraction - divide + addition - subtraction
 // console.log(bodmas3)
 // console.log(bodmas4)
 
-// string pe airthmatic operators ko apply krna
+// string pe arithmatic operators ko apply krna
 
-// string mein agr ham number plus (+) krenge to wo concatenate hojaega or number bhe string mein convert hojaega
-// or agr plus ke 
-// elawa koi or operator lagaenge to agr string number huwa to apply hojaega warna
+// string mein agr ham number plus (+) krenge to wo concatenate
+//hojaega or number bhe string mein convert hojaega
+// or agr plus ke
+// elawa koi or operator lagaenge to agr string number huwa to apply
+// hojaega warna
 // NaN aajaega
 
 var number1 = '40'
 var number2 = 5
 
-console.log(number1 + number2)
-console.log(number1 * number2)
-console.log(number1 - number2)
-console.log(number1 / number2)
+// console.log(number1 + number2)
+// console.log(number1 * number2)
+// console.log(number1 - number2)
+// console.log(number1 / number2)
 
-console.log("ABCD" * 5)
+// console.log("ABCD" * 5)
+
+// UnFamilier Operators
+
+//++ , --
+
+// var number = 20
+//post increment/decrement
+// number++
+// number--
+
+//pre increment/decrement
+// ++number
+// --number
+
+// console.log(number)
+
+// jiske aage ++/-- lagega wohi variable update hoga.
+// post mein pehle variable ko value assign hogi phr update hogi.
+// pre mein pehle variable update hoga phr value assign hogi.
+var pNum = 10
+var pNewNum = pNum++
+
+console.log(pNum)
+console.log(pNewNum)
+
+//post decrement
+var pdNum = 10
+var pdNewNum = pdNum--
+
+console.log(pdNum)
+console.log(pdNewNum)
+
+//pre increment
+var prNum = 10
+var prNewNum = ++prNum
+
+console.log(prNum)
+console.log(prNewNum)
+
+//pre decrement
+var prdNum = 10
+var prdNewNum = --prdNum
+
+console.log(prdNum)
+console.log(prdNewNum)
+
+var abc = 10
+
+console.log(abc++)
+console.log(abc++)
+console.log(abc)
+console.log(abc)
