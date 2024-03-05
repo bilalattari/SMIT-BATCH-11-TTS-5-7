@@ -46,3 +46,75 @@ if (age >=  18) {
 } else {
   document.write(`<h2>You are not adult. </h2>`)
 }
+
+// var city = prompt("Enter City Name")
+
+// if (city === "karachi") {
+//     console.log(city);
+// } else if (city === "lahore"){
+//     console.log(city);
+// } else {
+//     console.log("invalid");
+// }
+
+// var age = prompt("Enter your age");
+// var username = prompt("Enter your name");
+
+// && use krte heen ke sari condition match honi chahiye
+// if (age > 12 && age < 18 && username) {
+//   console.log("boy");
+// } else {
+//   console.log("invalid");
+// }
+
+// var username = prompt("Enter username")
+// var password = prompt("Enter password")
+// var email = prompt("Enter email")
+
+// if (username || password || email) {
+//   console.log(username , email, password);
+// } else {
+//   console.log("invalid");
+// }
+
+// || use krte heen ke koi aik condition bhi match hojay
+// if (age > 12 || username === 'zain') {
+//     console.log("boy");
+//   } else {
+//     console.log("invalid");
+//   }
+
+// prmot se phele + lagane se variable type string se number me convert hojati he
+// var num1 = +prompt("number 1");
+// var num2 = +prompt("number 2");
+
+// console.log(typeof num1);
+// console.log(num1 + num2);
+
+// if (num1 > num2) {
+//   console.log(num1);
+// } else {
+//   console.log(num2);
+// }
+
+// var side1 = prompt("side 1");
+// var side2 = prompt("side 2");
+// var side3 = prompt("side 3");
+
+// if (side1 === side2 && side1 === side3) {
+
+//   console.log("triangle");
+
+// } else if (side1 === side2 || side2 === side3 || side1 === side3){
+
+//     console.log("isoceles triangle");
+// }
+
+var num1 = Number(prompt("Enter any number"));
+// var result =
+if (num1 % 2 !== 0 && num1 > 20) {
+  console.log(` ${num1} is even and greater than 10`);
+} else {
+  console.log(num1);
+}
+
