@@ -118,3 +118,66 @@ if (num1 % 2 !== 0 && num1 > 20) {
   console.log(num1);
 }
 
+
+// var num = 10;
+// console.log(num % 3);
+
+// var userNum = +prompt();
+
+// if (userNum % 2 == 0) {
+//   console.log("Number is even");
+// } else if (userNum != 0) {
+//   console.log("NUMBER IS ODD");
+// }
+
+// var pass = prompt("Enter your password")
+// var confirmPass = prompt("Re-Enter your password")
+
+// var password = prompt("Enter password")
+// var confirmPassword = prompt("Re-Enter password")
+
+// if (password === confirmPassword) {
+//     console.log(password);
+// } else {
+//     console.log("invalid password");
+// }
+
+// var userNum = +prompt();
+
+// var num = 1234;
+
+// console.log(userNum);
+
+// if (userNum > 0 && userNum % 2 == 0 && userNum <= 10) {
+//   console.log("Number is even");
+// } else {
+//   console.log("invalid");
+// }
+
+// var num = true;
+
+// console.log(num);
+
+// num = "bilal";
+
+// console.log(num);
+
+// /var username = prompt("Enter your name");
+// var code = +prompt("Enter your code");
+
+// if ((username === "saif" || username === "huzaifa") && code === 786) {
+//   console.log(username);
+//   console.log(code);
+// } else {
+//   console.log("Invalid name");
+// }
+
+var num1 = prompt("")
+var num2 = prompt("")
+var num3 = prompt("")
+
+if(num1 === num2 && num2 === num3 && num1 === num3){
+    console.log("All are equal");
+} else if(num1 === num2 || num2 === num3 || num1 === num3){
+    console.log("Two a equal");
+}
