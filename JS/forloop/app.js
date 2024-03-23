@@ -64,18 +64,58 @@
 var nums = [20, 3, 12, 34, 21, 25, 6, 2];
 var largestNum = 0;
 for (var i = 0; i < nums.length; i++) {
-  console.log(
-    "index->",
-    i,
-    "arr value=>",
-    nums[i],
-    "largest number=>",
-    largestNum,
-    "condition=>",
-    nums[i] > largestNum
-  );
   if (nums[i] > largestNum) {
     largestNum = nums[i];
   }
 }
 console.log("Largest number is-> ", largestNum);
+
+// var nums = [20, 3, 12, 34, 21, 25, 6, 2];
+var smallestNum = nums[0];
+for (var i = 0; i < nums.length; i++) {
+  //block scope
+  if (nums[i] < smallestNum) {
+    smallestNum = nums[i];
+  }
+}
+console.log("Smallest number is-> ", smallestNum);
+
+// var bonds = [2155, 1513, 1522, 2135, 1413, 1621, 2125, 1113, 1222];
+// var bondNumber = prompt("Enter your bond number");
+// var won = false;
+// for (var i = 0; i < bonds.length; i++) {
+//   console.log(bonds[i], i);
+//   if (bonds[i] == bondNumber) {
+//     won = true;
+//     break;
+//   }
+// }
+// if (won) {
+//   document.write("You won");
+// } else {
+//   document.write("You loss");
+// }
+
+var karachiKeAlaqe = [
+  "Saddar",
+  "Shah Faisal",
+  "Gulshan",
+  "Korangi",
+  "Dha",
+  "Lyari",
+  "Maleer",
+  "Nazimabad",
+  "Hyderi",
+];
+var userElaqa = prompt("Aap kahan tashref rakhte hen");
+var deliveryAvailable = false;
+for (var i = 0; i < karachiKeAlaqe.length; i++) {
+  if (karachiKeAlaqe[i] === userElaqa) {
+    deliveryAvailable = true;
+    document.write("Delivery Available");
+    break;
+  }
+}
+if (!deliveryAvailable) {
+  document.write("Delivery Not Available");
+}
