@@ -127,4 +127,6 @@ var foods = ["Apple", "Banana", "Watermelon", "Grapes"];
 //   alert("Alredy Added");
 // }
 
-console.log(cities);
+// console.log(cities);
+
+
