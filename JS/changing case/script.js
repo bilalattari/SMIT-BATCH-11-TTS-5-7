@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9166cb51f7ddd7a88c0a604588afa78bd515655f
 // var username = "basit";
 
 // username.toUpperCase();
@@ -126,12 +130,21 @@
 
 //Q3.Password must include 1 capital letter , 1 number , min length should be 8.
 
+<<<<<<< HEAD
 // var UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // var SPECIAL = "!_@$";
 
 // var password = prompt("Enter password min length 8 , 1 Uppercase , 1 Number");
 
 // console.log(password);
+=======
+var UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var SPECIAL = "!_@$";
+ 
+var password = prompt("Enter password min length 8 , 1 Uppercase , 1 Number");
+
+console.log(password);
+>>>>>>> 9166cb51f7ddd7a88c0a604588afa78bd515655f
 
 // var userName = "bilal raza aaa aa aaa aa";
 // var arr = userName.split(" ");
@@ -154,6 +167,7 @@ var car = {
   modal: 2020,
 };
 
+<<<<<<< HEAD
 // var h1 = document.getElementById("heading");
 // var userInput = document.getElementById("userInput");
 
@@ -208,3 +222,9 @@ function changeBlack() {
 function changeYellow() {
   box.style.backgroundColor = "yellow";
 }
+=======
+var h1 = document.getElementById("heading");
+console.log(h1);
+
+h1.innerText = "We are learning DOM";
+>>>>>>> 9166cb51f7ddd7a88c0a604588afa78bd515655f
