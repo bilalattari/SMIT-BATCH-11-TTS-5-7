@@ -6,9 +6,39 @@
 // var a = "A";
 // var b = "B";
 
+// //asynchronous
 // setTimeout(() => {
 //   console.log(a);
 // }, 0);
+
+// console.log(b);
+
+// ['1','2','3','4'].forEach(()=>{})
+
+//callback
+var token = "";
+function login(func) {
+  setTimeout(() => {
+    token = (Math.random() * 1000000).toString();
+    func(token)
+  }, 500);
+}
+function getUserData(token) {
+  if (token) {
+    setTimeout(() => {
+      const user = {
+        name: "ABC",
+      };
+      console.log("user=>", user);
+    }, 200);
+  } else {
+    console.log("No Token");
+  }
+}
+login(getUserData);
+
+
+
 
 // fetch("https://api.escuelajs.co/api/v1/products")
 //   .then((res) => res.json())
@@ -78,27 +108,27 @@
 
 // var isError = true;
 
-function sum(a, b) {
-  return new Promise((resolve, reject) => {
-    resolve(a + b);
-  });
-}
+// function sum(a, b) {
+//   return new Promise((resolve, reject) => {
+//     resolve(a + b);
+//   });
+// }
 
-function addGstTax(amount) {
-  return new Promise((resolve, reject) => {
-    var tax = amount * 0.18;
-    var taxedAmout = amount + tax;
-    resolve(taxedAmout);
-  });
-}
+// function addGstTax(amount) {
+//   return new Promise((resolve, reject) => {
+//     var tax = amount * 0.18;
+//     var taxedAmout = amount + tax;
+//     resolve(taxedAmout);
+//   });
+// }
 
-function addServiceCharges(amount) {
-  return new Promise((resolve, reject) => {
-    var service = amount * 0.1;
-    var amountAfterService = amount + service;
-    resolve(amountAfterService);
-  });
-}
+// function addServiceCharges(amount) {
+//   return new Promise((resolve, reject) => {
+//     var service = amount * 0.1;
+//     var amountAfterService = amount + service;
+//     resolve(amountAfterService);
+//   });
+// }
 
 // sum(100, 100).then((amount) => {
 //   addGstTax(amount).then((taxedAmout) => {
@@ -113,12 +143,12 @@ function addServiceCharges(amount) {
 //     console.log(values);
 //   });
 
-fetch(
-  "https://api.openweathermap.org/data/2.5/weather?lat=35.3967&lon=74.6311&appid=c153479685c47f1b34a83591f3b1acbe"
-)
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    document.getElementById("temperatur").innerText =
-      data.main.temp - 273 + "C";
-  });
+// fetch(
+//   "https://api.openweathermap.org/data/2.5/weather?lat=35.3967&lon=74.6311&appid=c153479685c47f1b34a83591f3b1acbe"
+// )
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data);
+//     document.getElementById("temperatur").innerText =
+//       data.main.temp - 273 + "C";
+//   });
