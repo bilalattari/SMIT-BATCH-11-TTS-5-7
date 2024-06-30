@@ -103,3 +103,9 @@ logout_btn.addEventListener("click", () => {
       // An error happened.
     });
 });
+
+const isUser = false;
+
+if (isUser) {
+    console.log('user', user)
+} else if (isUser == false){}
